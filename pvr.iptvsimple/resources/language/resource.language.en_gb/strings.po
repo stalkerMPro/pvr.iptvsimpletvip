@@ -117,3 +117,47 @@ msgstr ""
 msgctxt "#30045"
 msgid "Change User-Agent"
 msgstr ""
+
+msgctxt "#30050"
+msgid "TVIP portal authorization"
+msgstr ""
+
+msgctxt "#30051"
+msgid "Use authorization"
+msgstr ""
+
+msgctxt "#30052"
+msgid "Login"
+msgstr ""
+
+msgctxt "#30053"
+msgid "Password"
+msgstr ""
+
+msgctxt "#30054"
+msgid "TVIP Provider-id"
+msgstr ""
+
+msgctxt "#30055"
+msgid "Device-uid"
+msgstr ""
+
+msgctxt "#30056"
+msgid "Device-class"
+msgstr ""
+
+msgctxt "#30057"
+msgid "Device-firmware"
+msgstr ""
+
+msgctxt "#30058"
+msgid "Device-type"
+msgstr ""
+
+msgctxt "#30059"
+msgid "Client-type"
+msgstr ""
+
+msgctxt "#30060"
+msgid "Client-version"
+msgstr ""
