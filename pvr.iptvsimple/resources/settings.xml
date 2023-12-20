@@ -31,4 +31,19 @@
     <setting id="sep3" label="30040" type="lsep"/>
     <setting id="logoFromEpg" type="enum" label="30041" default="0" lvalues="30042|30043|30044"/>
   </category>
+
+  <!-- TVIP auth -->
+  <category label="30050">
+    <setting id="sep4" label="30050" type="lsep"/>
+    <setting id="useAuth" type="bool" label="30051" default="false" visible="eq(-3,1)"/>
+    <setting id="login" type="text" label="30052" />
+    <setting id="pass" type="text" label="30053" />
+    <setting id="provider_id" type="text" label="30054" />
+    <setting id="device_uid" type="text" label="30055" />
+    <setting id="device_class" type="text" label="30056" />
+    <setting id="device_firmware" type="text" label="30057" />
+    <setting id="device_type" type="text" label="30058" />
+    <setting id="client_type" type="text" label="30059" />
+    <setting id="client_version" type="text" label="30060" />
+  </category>
 </settings>
