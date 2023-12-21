@@ -66,6 +66,16 @@ bool        g_bCacheM3U     = false;
 bool        g_bCacheEPG     = false;
 int         g_iEPGLogos     = 0;
 
+bool        g_bUseAuth               = false;
+std::string g_strTvipLogin           = "";
+std::string g_strTvipPass            = "";
+std::string g_strTvipProviderId      = "";
+std::string g_strTvipDeviceUid       = "";
+std::string g_strTvipDeviceClass     = "";
+std::string g_strTvipDeviceFirmware  = "";
+std::string g_strTvipDeviceType      = "";
+std::string g_strTvipClientVer       = "";
+
 extern std::string PathCombine(const std::string &strPath, const std::string &strFileName)
 {
   std::string strResult = strPath;
@@ -175,6 +185,48 @@ void ADDON_ReadSettings(void)
   // Logos from EPG
   if (!XBMC->GetSetting("logoFromEpg", &g_iEPGLogos))
     g_iEPGLogos = 0;
+
+  // TVIP auth
+  if (!XBMC->GetSetting("useAuth", &g_bUseAuth))
+  {
+      g_bUseAuth = true;
+  }
+  if (XBMC->GetSetting("login", &buffer))
+  {
+      g_strTvipLogin = buffer;
+  }
+  if (XBMC->GetSetting("pass", &buffer))
+  {
+      g_strTvipPass = buffer;
+  }
+  if (XBMC->GetSetting("provider_id", &buffer))
+  {
+      g_strTvipProviderId = buffer;
+  }
+  if (XBMC->GetSetting("device_uid", &buffer))
+  {
+      g_strTvipDeviceUid = buffer;
+  }
+  if (XBMC->GetSetting("device_class", &buffer))
+  {
+      g_strTvipDeviceClass = buffer;
+  }
+  if (XBMC->GetSetting("device_firmware", &buffer))
+  {
+      g_strTvipDeviceFirmware = buffer;
+  }
+  if (XBMC->GetSetting("device_type", &buffer))
+  {
+      g_strTvipDeviceType = buffer;
+  }
+  if (XBMC->GetSetting("client_type", &buffer))
+  {
+      g_strTvipClientType = buffer;
+  }
+  if (XBMC->GetSetting("client_version", &buffer))
+  {
+      g_strTvipClientVer = buffer;
+  }
 }
 
 ADDON_STATUS ADDON_Create(void* hdl, void* props)
