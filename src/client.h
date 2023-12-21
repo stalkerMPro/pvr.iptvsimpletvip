@@ -53,6 +53,16 @@ extern bool        g_bCacheM3U;
 extern bool        g_bCacheEPG;
 extern int         g_iEPGLogos;
 
+extern bool        g_bUseAuth;
+extern std::string g_strTvipLogin;
+extern std::string g_strTvipPass;
+extern std::string g_strTvipProviderId;
+extern std::string g_strTvipDeviceUid;
+extern std::string g_strTvipDeviceClass;
+extern std::string g_strTvipDeviceFirmware;
+extern std::string g_strTvipDeviceType;
+extern std::string g_strTvipClientVer;
+
 extern std::string PathCombine(const std::string &strPath, const std::string &strFileName);
 extern std::string GetClientFilePath(const std::string &strFileName);
 extern std::string GetUserFilePath(const std::string &strFileName);
